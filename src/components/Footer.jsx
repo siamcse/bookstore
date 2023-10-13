@@ -20,7 +20,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <button className='py-2 px-6 bg-primary rounded text-white'>Submit</button>
-                <p class="text-white mt-10">© 2023 BookStore - All rights reserved.</p>
+                <p className="text-white mt-10">© 2023 BookStore - All rights reserved.</p>
             </div>
         </footer>
     );
