@@ -1,3 +1,4 @@
+import Footer from '../../components/Footer';
 import Banner from './Banner/Banner';
 import ProductList from './ProductList/ProductList';
 
@@ -6,6 +7,7 @@ const Home = () => {
         <section>
             <Banner />
             <ProductList />
+            <Footer/>
         </section>
     );
 };

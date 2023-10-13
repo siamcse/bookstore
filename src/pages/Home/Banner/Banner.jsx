@@ -7,7 +7,7 @@ const Banner = () => {
         <div className="min-h-screen flex flex-col justify-center items-center relative bg-blend-overlay" style={{ backgroundImage: `url(${showcaseBg})` }}>
             <Navbar />
             <div className=''>
-                <h1 className='text-white text-4xl font-bold text-center'>Best <span className='text-primary'>Books</span> Available</h1>
+                <h1 className='text-white text-5xl font-bold text-center'>Best <span className='text-primary'>Books</span> Available</h1>
                 <p className='text-white mt-3 text-center'>Buy quality books at cheaper price</p>
                 <SearchField />
             </div>
