@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
 import authBg from '../../assets/auth-bg.jpg';
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
     return (
@@ -25,7 +26,8 @@ const SignUp = () => {
                             <p className='mb-1 font-medium'>Password</p>
                             <input type="password" className='w-5/6 sm:w-3/4 py-4 border-2 rounded outline-none px-3' placeholder='Enter your password' />
                         </div>
-                        <button className='py-3 px-6 bg-primary text-white rounded'>Login</button>
+                        <button className='py-3 px-6 bg-primary text-white rounded'>Sign Up</button>
+                        <p>Already have an account? Please <Link to='/login' className='hover:underline text-primary'>Login</Link></p>
                     </div>
                 </div>
             </div>
