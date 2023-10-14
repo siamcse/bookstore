@@ -9,6 +9,9 @@ const auth = getAuth(app);
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState({});
     const [cartItems, setCartItems] = useState([]);
+    const [totalAmount, setTotalAmount] = useState(0);
+
+    console.log(totalAmount);
 
     const createUser = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password);
@@ -30,6 +33,14 @@ const AuthProvider = ({ children }) => {
         return () => unSubscribe();
     }, [])
 
+    useEffect(() => {
+        let total = 0;
+        cartItems.forEach(book => {
+            total += parseInt(book.price);
+        });
+        setTotalAmount(total);
+    }, [cartItems])
+
     const authInfo = {
         user,
         createUser,
@@ -39,7 +50,8 @@ const AuthProvider = ({ children }) => {
 
     const cartInfo = {
         cartItems,
-        setCartItems
+        setCartItems,
+        totalAmount
     }
     return (
         <AuthContext.Provider value={authInfo}>
