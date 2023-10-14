@@ -28,6 +28,7 @@ const BookDetails = () => {
         }
         else {
             navigate('/login');
+            toast("Login first");
         }
     }
 
