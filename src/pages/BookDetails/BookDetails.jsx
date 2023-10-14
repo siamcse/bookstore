@@ -11,6 +11,7 @@ const BookDetails = () => {
     const { book_name, book_url, price, book_description, print_length, language, author_name } = bookData;
 
     useEffect(() => {
+        window.scrollTo(0,0);
         const book = BooksData.filter(book => book.id === parseInt(id));
         setBookData(book[0]);
     }, [id])

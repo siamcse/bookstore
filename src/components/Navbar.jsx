@@ -6,7 +6,7 @@ const Navbar = ({ darkText, darkTheme }) => {
     return (
         <nav className={`w-full py-3 absolute top-0 ${darkTheme ? 'bg-dark' : 'bg-transparent'}`}>
             <div className="container mx-auto flex justify-between items-center">
-                <Link to='/' className="text-2xl text-white font-bold">Book<span className="text-primary">Store</span></Link>
+                <Link to='/' className="text-2xl text-white font-bold font-['Chivo_Mono']">Book<span className="text-primary">Store</span></Link>
                 <div className="flex gap-3 text-white">
                     <Link className={linkClass} to="/">Home </Link>
                     <Link className={linkClass} to="/books">Books</Link>
